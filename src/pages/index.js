@@ -1,5 +1,19 @@
-import React from "react"
+import React from 'react'
+import { Link } from "gatsby"
+import Layout from '../components/Layout'
+import Head from '../components/Head'
 
-export default function Home() {
-  return <div>Hello world!</div>
+
+function index() {
+  return (
+    <Layout>
+        <Head title="Home"/>
+        <h1>Hello</h1>
+        <h2>I'm Dawid, a aspiring full-stack web developer!</h2>
+        <p>Need a developer? <Link to="/contact">Contact me.</Link></p>
+    </Layout>
+  )
 }
+
+export default index
+
